@@ -122,10 +122,6 @@ header>button,
     justify-content: space-between;
     background-color: var(--color-2);
 }
-
-.content .tech-stack img{
-
-}
 /* tech-stack end */
 
 
@@ -153,7 +149,7 @@ header>button,
 .content .testimonials .testimonials-list,
 .content .services .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
     align-items: stretch;
     justify-content: center;
     gap: 1rem;
