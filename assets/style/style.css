@@ -19,8 +19,7 @@ html{
 
 
 h2,
-header,
-header nav button,
+header nav a,
 header button,
 .content main button {
     text-transform: capitalize;
@@ -28,21 +27,14 @@ header button,
 
 /* header start */
 header {
-    width: 100%;
-    height: 80px; /* Sesuaikan dengan kebutuhan */
+    height: 10vh;
     background-color: var(--color-1);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-header .container {
-    max-width: 1200px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
-    height: 100%;
-    margin: 0 auto;
+    box-shadow: 0 .15rem .45rem rgba(0,0,0,0.1);
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
@@ -55,13 +47,13 @@ header .logo {
 }
 
 header .logo img {
-    height: 40px; /* Sesuaikan dengan ukuran logo */
+    height: 5rem; /* Sesuaikan dengan ukuran logo */
     width: auto;
-    margin-right: 10px;
+    margin-right: 1.5rem;
 }
 
 header .logo h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -69,7 +61,12 @@ header .logo h1 {
 
 header nav {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
     gap: 2rem;
+    font-size: 1.5rem;
 }
 
 header nav a {
@@ -78,33 +75,9 @@ header nav a {
     font-weight: 500;
     text-transform: capitalize;
 }
-/* 
-.cta-button {
-    
-} */
-
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 20rem;
-}
-
-header nav a{
-    text-decoration: none;
-}
-
-
-
-header nav button {
-    border: none;
-    background-color: var(--color-3);
-    font-size: 1rem;
-}
 /* nav end */
 
-header > .container > button,
+header > button,
 .content > main > button {
     height: fit-content;
     border-radius: .5rem;
@@ -115,7 +88,6 @@ header > .container > button,
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 1rem;
-    text-transform: capitalize;
 }
 
 
@@ -133,7 +105,7 @@ header > .container > button,
     min-height: 90vh;
     font-size: 3rem;
     background: none;
-    padding-top: 80px;
+    padding-top: 5rem;
 }
 
 .content main h2 {
@@ -151,10 +123,17 @@ header > .container > button,
 .content .tech-stack{
     padding: 2rem;
     display: flex;
+    min-height: 10vh;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--color-2);
-    margin-top: 25px;
+    width: 100%;
+}
+
+.content .tech-stack img{
+    height: 3rem;
+    width: auto;
 }
 /* tech-stack end */
 
@@ -168,6 +147,7 @@ header > .container > button,
     min-height: 85vh;
     text-align: center;
     font-weight: 500;
+    width: 100%;
 }
 
 .content .testimonials h2,
@@ -183,12 +163,15 @@ header > .container > button,
 .content .testimonials .testimonials-list,
 .content .services .services-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(400px, 1fr));
-    align-items: stretch;
     justify-content: center;
+    align-items: stretch;
     gap: 1rem;
     padding: 2rem;
     width: 100%;
+}
+.content .services .services-list {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .content .testimonials .testimonials-list .client,
@@ -216,12 +199,20 @@ header > .container > button,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%
+}
+
+.content .testimonials .testimonials-list{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .content .testimonials .testimonials-list .client .quotes{
     text-align: center;
     font-size: 2rem;
     height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content .testimonials .testimonials-list .client .client-name{
     text-align: center;
@@ -240,15 +231,26 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
     justify-content: start;
     align-items: center;
     color: var(--color-1);
 }
-
-
 
 footer img{
     margin: 0 1rem;
 }
 
 /* footer end */
+
+/* MEDIA QUERY */
+@media (max-width: 430px) {
+    html{
+        font-size: 12px;
+    }
+
+    header nav{
+        display: none;
+    }
+}
+
