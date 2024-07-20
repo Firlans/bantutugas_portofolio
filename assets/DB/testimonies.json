@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "GEA",
+        "quotes": "Oke kak makasih Programnya bagus banget saya suka tampilan UI nya",
+        "created_at": "2024-07-21 00:50:15.000000",
+        "updated_at": "2024-07-21 00:50:15.000000"
+    },
+    {
+        "id": 2,
+        "name": "Fawas Fatih",
+        "quotes": "Makasih Bang Saya Dapet Nilai A",
+        "created_at": "2024-07-21 00:50:15.000000",
+        "updated_at": "2024-07-21 00:50:15.000000"
+    },
+    {
+        "id": 3,
+        "name": "Dafa",
+        "quotes": "Mantap bang prosesnya cepet banget harganya juga pas di kantong mahasiswa",
+        "created_at": "2024-07-21 00:50:15.000000",
+        "updated_at": "2024-07-21 00:50:15.000000"
+    }
+]
