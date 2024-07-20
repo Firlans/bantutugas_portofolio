@@ -1,6 +1,6 @@
 async function fetchDataServices() {
     try {
-        const response = await fetch("./assets/DB/data.json")
+        const response = await fetch("./assets/DB/services.json")
         const data = await response.json();
         return data
     } catch (error) {
