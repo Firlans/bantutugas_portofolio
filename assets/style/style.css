@@ -25,6 +25,11 @@ header button,
     text-transform: capitalize;
 }
 
+a, a:hover{
+    text-decoration: none;
+    color: var(--color-1);
+}
+
 /* header start */
 header {
     height: 10vh;
@@ -167,11 +172,10 @@ header > button,
     align-items: stretch;
     gap: 1rem;
     padding: 2rem;
-    width: 100%;
 }
 .content .services .services-list {
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
 .content .testimonials .testimonials-list .client,
@@ -203,6 +207,7 @@ header > button,
 }
 
 .content .testimonials .testimonials-list{
+    width: fit-content;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
@@ -251,6 +256,11 @@ footer img{
 
     header nav{
         display: none;
+    }
+
+    .content .testimonials .testimonials-list,
+    .content .services .services-list{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
