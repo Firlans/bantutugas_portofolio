@@ -194,6 +194,9 @@ header > button,
     color: var(--color-1);
     border-radius: 1.3rem;
 }
+.content .services button:hover{
+    cursor: pointer;
+}
 
 /* services end */
 
@@ -261,6 +264,12 @@ footer img{
     .content .testimonials .testimonials-list,
     .content .services .services-list{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html{
+        font-size: 14px;
     }
 }
 

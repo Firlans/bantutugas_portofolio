@@ -22,5 +22,17 @@
     {
         "id": 6,
         "name": "Bantu PPT"
+    },
+    {
+        "id": 7,
+        "name": "Bantu Print"
+    },
+    {
+        "id": 8,
+        "name": "Bantu Proposal"
+    },
+    {
+        "id": 7,
+        "name": "Bantu Makalah"
     }
 ]

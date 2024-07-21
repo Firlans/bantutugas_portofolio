@@ -9,9 +9,9 @@ CREATE TABLE services(
     name VARCHAR(255)
 );
 
-/* create table testimonies */
+/* create table testimonials */
 USE bantutugas;
-CREATE TABLE testimonies(
+CREATE TABLE testimonials(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255),
     quotes VARCHAR(255),
@@ -24,7 +24,7 @@ CREATE TABLE testimonies(
 USE bantutugas;
 SHOW TABLES ;
 DESC services;
-DESC testimonies;
+DESC testimonials;
 
 
 /* insert data services */
@@ -38,9 +38,9 @@ VALUES
     ("Bantu UI/UX"),
     ("Bantu PPT");
 
-/* insert data testimonies */
+/* insert data testimonials */
 USE bantutugas;
-INSERT INTO testimonies (name, quotes)
+INSERT INTO testimonials (name, quotes)
 VALUES
     ("GEA", "Oke kak makasih Programnya bagus banget saya suka tampilan UI nya"),
     ("Fawas Fatih", "Makasih Bang Saya Dapet Nilai A"),
@@ -50,7 +50,7 @@ VALUES
 USE bantutugas;
 DROP TABLE services;
 
-/* delete table testimonies */
+/* delete table testimonials */
 USE bantutugas;
 DROP TABLE testimonies;
 
@@ -58,9 +58,9 @@ DROP TABLE testimonies;
 USE bantutugas;
 SELECT * FROM services;
 
-/* select data testimonies */
+/* select data testimonials */
 USE bantutugas;
-SELECT * FROM testimonies;
+SELECT * FROM testimonials;
 
 /* select data services dalam bentuk format json */
 USE bantutugas;
@@ -73,7 +73,7 @@ SELECT
     ) AS json_result
 FROM services;
 
-/* select data testimonies dalam bentuk format json */
+/* select data testimonials dalam bentuk format json */
 USE bantutugas;
 SELECT 
     JSON_ARRAYAGG(
@@ -85,4 +85,4 @@ SELECT
             'updated_at', updated_at
         )
     ) AS json_result
-FROM testimonies;
+FROM testimonials;
