@@ -58,7 +58,7 @@ header .logo img {
 }
 
 header .logo h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -108,12 +108,12 @@ header > button,
     align-items: center;
     width: 100%;
     min-height: 90vh;
-    font-size: 3rem;
     background: none;
     padding-top: 5rem;
 }
 
 .content main h2 {
+    font-size: 3rem;
     max-width: 70%;
     margin: 3rem;
 }
@@ -252,6 +252,12 @@ footer img{
 /* footer end */
 
 /* MEDIA QUERY */
+@media only screen and (max-width: 1024px) {
+    html{
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 430px) {
     html{
         font-size: 12px;
@@ -267,9 +273,4 @@ footer img{
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    html{
-        font-size: 14px;
-    }
-}
 
